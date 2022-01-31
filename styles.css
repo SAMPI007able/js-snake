@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sigmar+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+body{
+    background-image: url('img/bg.jpg');
+    background-size: 100vw;
+}
+
+.container-top{
+    color: #fff;
+    font-size: 16px;
+}
+
+.game-board{
+    height: 64vh;
+    width: 64vw;
+    display: grid;
+    grid-template-rows: repeat(64, 1fr);
+    grid-template-columns: repeat(64, 1fr);
+    margin: 0px auto;
+    background-image: linear-gradient(#f0f9ff, #e0f2fe);
+}
+
+.game-board > div{
+    height: 2vh;
+    width: 1vw;
+}
+
+#start-btn{
+    border-style: none;
+    background: #84cc16;
+    COLOR: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 1px 1px 3px 2px #a3e635;
+    left: 45vw;
+    top: 5vh;
+    position: relative;
+}
+
+.game-board > div.snake{
+    position: relative;
+    background: #84cc16;
+}
+
+.game-board > div.head{
+    position: relative;
+    background: #97b964;
+}
+
+.game-board > #food{
+    position: relative;
+    background: red;
+}
+
